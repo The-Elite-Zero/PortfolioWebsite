@@ -1,0 +1,51 @@
+﻿@page "/skills"
+@inject SkillService Skill_Service
+
+@if (skills == null)
+{
+    <p>Loading...</p>
+}
+else if (!skills.Any())
+{
+    <p>No skills found.</p>
+}
+else
+{
+    @foreach (var category in SkillCategories)
+    {
+        var filteredSkills = skills.Where(s => s.Type == category.Value);
+        if (filteredSkills.Any())
+        {
+            <h3>@category.Key</h3>
+            <ul>
+                @foreach (var skill in filteredSkills)
+                {
+                    <li title="Experience: @skill.YearsExperience years">
+                        <img src="@skill.ImgURL" width="50" height="50" />
+                        <strong>@skill.Name</strong>
+                    </li>
+                }
+            </ul>
+        }
+    }
+
+}
+
+@code {
+    private List<Skill>? skills;
+
+    private readonly Dictionary<string, string> SkillCategories = new()
+    {
+        { "Languages", Skill.LANGUAGE },
+        { "Frameworks & Tools", Skill.FRAMEWORK },
+        { "Database Management", Skill.DBMS },
+        { "Cloud", Skill.CLOUD },
+        { "DevOps", Skill.DEVOPS },
+        { "DevSecOps", Skill.DEVSECOPS }
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        skills = await Skill_Service.GetSkillsAsync();
+    }
+}

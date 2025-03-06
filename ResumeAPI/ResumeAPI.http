@@ -1,0 +1,23 @@
+@ResumeAPI_HostAddress = http://localhost:5138
+
+GET {{ResumeAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+### Get About Me
+GET https://localhost:5001/api/aboutme
+Accept: application/json
+
+### Get Education
+GET https://localhost:5001/api/education
+Accept: application/json
+
+### Get Projects
+GET https://localhost:5001/api/projects
+Accept: application/json
+
+### Get Skills
+GET https://localhost:5001/api/skills
+Accept: application/json
+

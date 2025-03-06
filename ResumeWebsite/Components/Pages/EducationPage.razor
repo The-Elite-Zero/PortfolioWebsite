@@ -1,0 +1,34 @@
+﻿@page "/education"
+@inject EducationService EducationService
+
+<h2>Education</h2>
+
+@if (educationList == null)
+{
+    <p>Loading...</p>
+}
+else if (!educationList.Any())
+{
+    <p>No education records found.</p>
+}
+else
+{
+    <ul>
+        @foreach (var edu in educationList)
+        {
+            <li>
+                <strong>@edu.Name</strong> - @edu.Degree in @edu.Field (Class of @edu.GraduationYear)
+            </li>
+        }
+    </ul>
+}
+
+@code 
+{
+    private List<Education>? educationList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        educationList = await EducationService.GetEducationAsync();
+    }
+}

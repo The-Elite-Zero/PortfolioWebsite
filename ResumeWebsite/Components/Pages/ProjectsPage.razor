@@ -1,0 +1,33 @@
+﻿@page "/projects"
+@inject ProjectService ProjectService
+
+<h3>Projects</h3>
+
+@if (projects == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (var project in projects)
+        {
+            <li>
+                <strong>@project.Title</strong> - @project.Company
+                <br />
+                <small>@project.StartDate - @project.EndDate</small>
+                <p>@project.Description</p>
+            </li>
+        }
+    </ul>
+}
+
+@code 
+{
+    private List<Project>? projects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        projects = await ProjectService.GetProjectsAsync();
+    }
+}

@@ -1,0 +1,27 @@
+﻿@page "/aboutme"
+@inject AboutMeService AboutMeService
+
+<h2>About Me</h2>
+
+@if (aboutMe == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div>
+        <img src="@aboutMe.ProfilePicture" alt="@aboutMe.Name" width="150" height="150" />
+        <h3>@aboutMe.Name</h3>
+        <p>@aboutMe.Title</p>
+    </div>
+}
+
+@code 
+{
+    private AboutMe? aboutMe;
+
+    protected override async Task OnInitializedAsync()
+    {
+        aboutMe = await AboutMeService.GetAboutMeAsync();
+    }
+}

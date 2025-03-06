@@ -1,0 +1,210 @@
+[
+  {
+    "Id": 1,
+    "Name": "C#",
+    "Type": "Language",
+    "YearsExperience": 6,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png",
+    "IsTopSkill": true
+  },
+  {
+    "Id": 2,
+    "Name": "C",
+    "Type": "Language",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 3,
+    "Name": "C++",
+    "Type": "Language",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 4,
+    "Name": "TypeScript",
+    "Type": "Language",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg",
+    "IsTopSkill": true
+  },
+  {
+    "Id": 5,
+    "Name": "JavaScript",
+    "Type": "Language",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 6,
+    "Name": "HTML",
+    "Type": "Language",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 7,
+    "Name": "CSS",
+    "Type": "Language",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 8,
+    "Name": "Python",
+    "Type": "Language",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+    "IsTopSkill": true
+  },
+  {
+    "Id": 9,
+    "Name": ".NET",
+    "Type": "Framework & Tools",
+    "YearsExperience": 6,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg",
+    "IsTopSkill": true
+  },
+  {
+    "Id": 10,
+    "Name": "Entity Framework",
+    "Type": "Framework & Tools",
+    "YearsExperience": 6,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/6/62/Entity_Framework.png",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 11,
+    "Name": "WPF",
+    "Type": "Framework & Tools",
+    "YearsExperience": 6,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/3/31/Windows_Presentation_Foundation_Logo.png",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 12,
+    "Name": "MVVM",
+    "Type": "Framework & Tools",
+    "YearsExperience": 5,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/b/b5/MVVMPattern.png",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 13,
+    "Name": "MVC",
+    "Type": "Framework & Tools",
+    "YearsExperience": 5,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/a/a0/MVC-Process.svg",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 14,
+    "Name": "Visual Studio",
+    "Type": "Framework & Tools",
+    "YearsExperience": 8,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Visual_Studio_Icon_2022.svg",
+    "IsTopSkill": true
+  },
+  {
+    "Id": 15,
+    "Name": "Angular",
+    "Type": "Framework & Tools",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 16,
+    "Name": "Node.js",
+    "Type": "Framework & Tools",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 17,
+    "Name": "REST API",
+    "Type": "Framework & Tools",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/6/60/REST-API-Logo.png",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 18,
+    "Name": "Blazor",
+    "Type": "Framework & Tools",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png",
+    "IsTopSkill": true
+  },
+  {
+    "Id": 19,
+    "Name": "SQL",
+    "Type": "DBMS",
+    "YearsExperience": 4,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 20,
+    "Name": "MySQL",
+    "Type": "DBMS",
+    "YearsExperience": 4,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg",
+    "IsTopSkill": true
+  },
+  {
+    "Id": 21,
+    "Name": "LINQ",
+    "Type": "DBMS",
+    "YearsExperience": 4,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/5/54/LINQ_Logo.png",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 22,
+    "Name": "AWS",
+    "Type": "Cloud",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 23,
+    "Name": "Docker",
+    "Type": "Cloud",
+    "YearsExperience": 1,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg",
+    "IsTopSkill": false
+  },
+  {
+    "Id": 24,
+    "Name": "Azure DevOps",
+    "Type": "DevOps",
+    "YearsExperience": 2,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/6/63/Microsoft_Azure_DevOps_Logo.svg",
+    "IsTopSkill": true
+  },
+  {
+    "Id": 25,
+    "Name": "JIRA",
+    "Type": "DevOps",
+    "YearsExperience": 4,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/en/0/0e/Jira_%28Software%29_logo.svg",
+    "IsTopSkill": true
+  },
+  {
+    "Id": 26,
+    "Name": "None",
+    "Type": "DevSecOps",
+    "YearsExperience": 0,
+    "ImgURL": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Security_icon.svg",
+    "IsTopSkill": false
+  }
+]

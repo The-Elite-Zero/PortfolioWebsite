@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "Title": "Senior Software Engineer",
+    "Company": "Lenovo",
+    "StartDate": "2022-12-05",
+    "EndDate": "2024-09-18",
+    "Description": "Software development, testing and implementation for Lenovo Cloud Deploy (LCD), a service provided by Lenovo to help organizations manage their IT infrastructure through cloud-based solutions. Utilized C#, Angular, TypeScript, Node.js, AWS functions and conducted unit testing to ensure system robustness.",
+    "TechStack": "C#, WPF, TypeScript, Angular, Node.js, MySQL, AWS, Lambda",
+    "ImageUrl": "",
+    "GitHubLink": "",
+    "ProjectLink": "https://www.LenovoCloudDeploy.com"
+  },
+  {
+    "Id": 2,
+    "Title": "Software Engineer",
+    "Company": "NASA",
+    "StartDate": "2018-10-01",
+    "EndDate": "2022-12-05",
+    "Description": "Software engineer for NASA’s Data Acquisition Software (NDAS) supporting Rocket Propulsion Testing operations. Developed, tested, and deployed WPF desktop applications utilizing C# .NET Framework and MySQL databases in an MVVM architecture.",
+    "TechStack": "C#, WPF, Entity Framework, MySQL, LINQ",
+    "ImageUrl": "",
+    "GitHubLink": "",
+    "ProjectLink": ""
+  },
+  {
+    "Id": 3,
+    "Title": "Computational Scientist Intern",
+    "Company": "Engility Corp.",
+    "StartDate": "2018-04-01",
+    "EndDate": "2018-08-31",
+    "Description": "Analyzed performance of NAVGEM (Navy Global Environmental Model), focusing on vectorization and hardware optimization. Used hardware performance counters and data to identify optimization opportunities.",
+    "TechStack": "Python, Linux, High Performance Computing",
+    "ImageUrl": "",
+    "GitHubLink": "",
+    "ProjectLink": ""
+  }
+]

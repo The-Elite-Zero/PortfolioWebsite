@@ -1,0 +1,37 @@
+﻿@inject ProjectService Project_Service
+
+@if (projects == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="projects-container">
+        <h3 class="fw-bold">Engineering Experience</h3>
+        <hr />
+
+        @foreach (var project in projects)
+        {
+            <div class="project-card">
+                <h5 class="fw-bold">@project.Company</h5>
+                <p class="project-description">@project.Description</p>
+
+                @if (!string.IsNullOrEmpty(project.ProjectLink))
+                {
+                    <a href="@project.ProjectLink" target="_blank" class="project-link">View Project</a>
+                }
+                else
+                {
+                    <span class="text-muted">Not Available</span>
+                }
+            </div>
+        }
+    </div>
+}
+
+@code 
+{
+    private List<Project>? projects;
+
+    protected override async Task OnInitializedAsync() => projects = await Project_Service.GetProjectsAsync();
+}

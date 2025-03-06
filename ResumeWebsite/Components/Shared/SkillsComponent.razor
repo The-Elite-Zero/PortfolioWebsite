@@ -1,0 +1,52 @@
+﻿@inject SkillService Skill_Service
+
+@if (skills == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="skills-container">
+        <h3 class="fw-bold">Top Skills</h3>
+        <hr />
+
+        @foreach (var category in skillCategories)
+        {
+            List<Skill> selectedSkills = GetTopSkills(category.Value);
+
+            if (selectedSkills.Any())
+            {
+                <div class="skill-category">
+                    <h5 class="category-title">@category.Key</h5>
+                    <div class="skills-list">
+                        @foreach (var skill in selectedSkills)
+                        {
+                            <div class="skill-item" title="Experience: @skill.YearsExperience years">
+                                <img src="@skill.ImgURL" alt="@skill.Name" class="skill-icon" />
+                                <span class="skill-name">@skill.Name</span>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+}
+
+@code
+{
+    private List<Skill>? skills;
+    private Dictionary<string, string> skillCategories;
+
+    protected override async Task OnInitializedAsync()
+    {
+        skills = await Skill_Service.GetSkillsAsync();
+        skillCategories = Skill_Service.GetSkillCategories();
+    }
+
+    private List<Skill>? GetTopSkills(string? category) => skills
+            .Where(s => s.Type == category && s.IsTopSkill == true)
+            .ToList();
+
+}
