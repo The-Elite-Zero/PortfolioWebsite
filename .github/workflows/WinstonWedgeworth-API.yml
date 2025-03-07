@@ -38,6 +38,7 @@ jobs:
     - name: Download artifact from build job
       uses: actions/download-artifact@v3
       with:
+        include-hidden-files: true
         name: webapp
         path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
     - name: Deploy to Azure WebApp
