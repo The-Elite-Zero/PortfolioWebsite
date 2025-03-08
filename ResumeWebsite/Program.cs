@@ -1,11 +1,14 @@
 using ResumeWebsite.Client.Services;
 using ResumeWebsite.Components;
+using static System.Net.WebRequestMethods;
 
 var builder = WebApplication.CreateBuilder(args);
+const string BASE_API_URL = "https://winstonwedgeworth-api.azurewebsites.net";
+
 
 // Add services to the container.
 builder.Services.AddRazorComponents().AddInteractiveServerComponents();
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("winstonwedgeworth-api.azurewebsites.net") });
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(BASE_API_URL) });
 
 // API Services
 builder.Services.AddScoped<AboutMeService>();
