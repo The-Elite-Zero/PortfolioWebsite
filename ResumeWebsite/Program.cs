@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents().AddInteractiveServerComponents();
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7127/") });
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("winstonwedgeworth-api.azurewebsites.net") });
 
 // API Services
 builder.Services.AddScoped<AboutMeService>();
