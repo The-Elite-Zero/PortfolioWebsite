@@ -1,6 +1,5 @@
 using ResumeWebsite.Client.Services;
 using ResumeWebsite.Components;
-using static System.Net.WebRequestMethods;
 
 var builder = WebApplication.CreateBuilder(args);
 const string BASE_API_URL = "https://winstonwedgeworth-api.azurewebsites.net";
