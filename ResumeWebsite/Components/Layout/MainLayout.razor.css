@@ -160,13 +160,13 @@
 }
 
 #education {
-    background: url('/images/USM-Background.jpg') no-repeat center center;
+    background: url('images/USM-Background.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #projects {
-    background: url('/images/Projects-Background.jpg') no-repeat center center;
+    background: url('images/Projects-Background.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     
