@@ -6,20 +6,23 @@
 }
 else
 {
-    <div class="card">
-        <div class="card-body">
-            <h3 class="fw-bold">Education</h3>
-            <hr/>
+    <div class="education-container">
+        <h3 class="fw-bold">Education</h3>
+        <hr />
 
-            @foreach (var edu in education)
-            {
-                <h5 class="fw-bold">@edu.Name</h5>
-                <h5>@edu.Degree, @edu.Field</h5>
-                <h5>@edu.GraduationYear</h5>
-            }
-        </div>
+        @foreach (var edu in education)
+        {
+            <div class="education-card">
+                <div class="education-details">
+                    <h5 class="fw-bold">@edu.Name</h5>
+                    <h5>@edu.Degree, @edu.Field</h5>
+                    <h5>@edu.GraduationYear</h5>
+                </div>
+            </div>
+        }
     </div>
 }
+
 
 @code
 {
