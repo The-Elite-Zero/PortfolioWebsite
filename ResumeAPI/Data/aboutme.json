@@ -1,9 +1,10 @@
 {
-    "Id": 1,
-    "Name": "Winston Wedgeworth III",
-    "Title": "Senior Software Engineer",
-    "Email": "Wedgeworth.Winston@Gmail.com",
-    "LinkedIn": "https://www.linkedin.com/in/winstonwedgeworth",
-    "GitHub": "https://github.com/The-Elite-Zero",
-    "ProfilePicture": ""
+  "Id": 1,
+  "Name": "Winston Wedgeworth III",
+  "Title": "Senior Software Engineer",
+  "Email": "Wedgeworth.Winston@Gmail.com",
+  "LinkedIn": "https://www.linkedin.com/in/winstonwedgeworth",
+  "GitHub": "https://github.com/The-Elite-Zero",
+  "ProfilePicture": "",
+  "Bio": "Software Engineer with 5+ years of experience building .NET applications. I enjoy turning complex problems into clean, reliable solutions"
 }
