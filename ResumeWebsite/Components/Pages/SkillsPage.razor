@@ -31,21 +31,14 @@ else
 
 }
 
-@code {
+@code 
+{
     private List<Skill>? skills;
-
-    private readonly Dictionary<string, string> SkillCategories = new()
-    {
-        { "Languages", Skill.LANGUAGE },
-        { "Frameworks & Tools", Skill.FRAMEWORK },
-        { "Database Management", Skill.DBMS },
-        { "Cloud", Skill.CLOUD },
-        { "DevOps", Skill.DEVOPS },
-        { "DevSecOps", Skill.DEVSECOPS }
-    };
+    private Dictionary<string, string> SkillCategories;
 
     protected override async Task OnInitializedAsync()
     {
         skills = await Skill_Service.GetSkillsAsync();
+        SkillCategories = Skill_Service.GetSkillCategories();
     }
 }
