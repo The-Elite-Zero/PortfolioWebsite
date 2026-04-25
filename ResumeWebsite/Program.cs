@@ -1,19 +1,10 @@
 using ResumeWebsite.Client.Services;
 using ResumeWebsite.Components;
+using ResumeWebsite.Startup;
 
 var builder = WebApplication.CreateBuilder(args);
-const string BASE_API_URL = "https://winstonwedgeworth-api.azurewebsites.net";
 
-
-// Add services to the container.
-builder.Services.AddRazorComponents().AddInteractiveServerComponents();
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(BASE_API_URL) });
-
-// API Services
-builder.Services.AddScoped<AboutMeService>();
-builder.Services.AddScoped<EducationService>();
-builder.Services.AddScoped<ProjectService>();
-builder.Services.AddScoped<SkillService>();
+builder.AddDependencies();
 
 var app = builder.Build();
 
@@ -28,9 +19,9 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
+
 app.UseAntiforgery();
 
-app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
+app.MapRazorComponents<App>().AddInteractiveServerRenderMode();
 
 app.Run();
